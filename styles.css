@@ -1,0 +1,133 @@
+:root {
+  --accent-color: rgb(59, 95, 58);
+  --main-color: rgb(59, 59, 59);
+  --bg-color: rgb(48, 48, 48);
+  --font-color: rgb(204, 204, 204);
+  --subfont-color: rgb(170, 170, 170);
+}
+
+body {
+  display: grid;
+  grid-template: 1fr 5fr / 1fr 4fr;
+  color: var(--font-color);
+}
+
+.sidebar {
+  grid-area: 1 / 1 / 2 / 1;
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  font-size: 40px;
+}
+
+.main-btns .other-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.nav-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.header {
+  grid-area: 1 / 2 / 1 / 2;
+  background-color: var(--main-color);
+  display: grid;
+  grid-template-rows: 4fr 5fr;
+  margin: 10px 20px;
+}
+
+.upper-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+}
+
+.search input {
+  width: 250px;
+  padding: 8px 12px;
+  background-color: var(--bg-color);
+}
+
+.right-upper-header {
+  display: flex;
+  gap: 10px;
+}
+
+.lower-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.user-info {
+  justify-self: start;
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+}
+
+.action-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.action-btn {
+  padding: 4px 4px;
+  border-radius: 0%;
+  background-color: var(--accent-color);
+}
+
+.main {
+  grid-area: 2 / 2 / 2 / 2;
+  background-color: var(--bg-color);
+  display: grid;
+  grid-template: 1fr 1fr / 3fr 1fr;
+  margin: 20px 40px 10px 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 10px;
+}
+
+.project {
+  display: grid;
+  grid-template-rows: 10px 1fr 15px;
+  background-color: var(--main-color);
+  border-radius: 0%;
+}
+
+.project-icons {
+  justify-self: right;
+  align-self: last baseline;
+  display: flex;
+  gap: 10px;
+}
+
+.ann-card {
+  background-color: var(--main-color);
+  border-radius: 0%;
+}
+
+.trend-card {
+  background-color: var(--main-color);
+  border-radius: 0%;
+}
+
+.trend {
+  display: flex;
+  gap: 10px;
+}
